@@ -47,3 +47,49 @@ document.getElementById('main').addEventListener('keyup', event => {
     move(sprite2, 'right');
   }
 });
+
+////////////////////////////////////////
+
+function player1moveup() {
+  move(sprite1, 'up');
+}
+
+function player1movedown() {
+  move(sprite1, 'down');
+}
+
+function player1moveleft() {
+  move(sprite1, 'left');
+}
+
+function player1moveright() {
+  move(sprite1, 'right');
+}
+
+function player1moveup() {
+  move(sprite2, 'up');
+}
+
+function player1movedown() {
+  move(sprite2, 'down');
+}
+
+function player1moveleft() {
+  move(sprite2, 'left');
+}
+
+function player1moveright() {
+  move(sprite2, 'right');
+}
+
+<button onclick="player1moveup()">W</button>
+<button onclick="player1movedown()">S</button>
+<button onclick="player1moveleft()">A</button>
+<button onclick="player1moveright()">D</button>
+
+<button onclick="player2moveup()">I</button>
+<button onclick="player2movedown()">K</button>
+<button onclick="player2moveleft()">J</button>
+<button onclick="player2moveright()">L</button>
+//////////////////////////
+
