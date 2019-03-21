@@ -6,17 +6,17 @@
 
 </head>
 <body>
-  <header>
-      <h1 class="welcome">Welcome Players!</h1>
-  </header>
+    <header>
+        <h1 class="welcome">Welcome Players!</h1>
+    </header>
     <main>
       <div class="tile-playfield">
         <!-- characters -->
-        <div class="sprite grid-item sprite-1">
+        <div class="sprite grid-item sprite-1" id="sprite1">
           <img src="sprites/cowboy.png" alt="cowboy sprite">
         </div>
 
-        <div class="sprite grid-item sprite-2">
+        <div class="sprite grid-item sprite-2" id="sprite2">
           <img src="sprites/santa.png" alt="santa sprite">
         </div>
 
@@ -229,37 +229,6 @@
       </div>
     </main>
 
-    <footer>
-      <div>
-      <h1>P1 Controls</h1>
-      <ul>
-        <li>W - Up</li>
-        <li>A - Left</li>
-        <li>S - Down</li>
-        <li>D - Right</li>
-      </ul>
-      </div>
-      <div>
-        <h1>P2 Controls</h1>
-        <ul>
-          <li>I - Up</li>
-          <li>J - Left</li>
-          <li>K - Down</li>
-          <li>L - Right</li>
-        </ul>
-      </div>
-    </footer>
-
-    <div class="buttons">
-      <button onclick="player1moveup()">W</button>
-      <button onclick="player1movedown()">S</button>
-      <button onclick="player1moveleft()">A</button>
-      <button onclick="player1moveright()">D</button>
-
-      <button onclick="player2moveup()">I</button>
-      <button onclick="player2movedown()">K</button>
-      <button onclick="player2moveleft()">J</button>
-      <button onclick="player2moveright()">L</button>
-    </div>
 </body>
+<script src="main.js"></script>
 </html>
