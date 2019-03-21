@@ -4,6 +4,9 @@ var sprite1Y = 1;
 var sprite2X = 8;
 var sprite2Y = 8;
 
+let sprite1 = document.querySelector('#sprite1');
+let sprite2 = document.querySelector('#sprite2');
+
 function checkBounds (sprite) {
   return true;
 }
@@ -75,11 +78,6 @@ function move2 (sprite, direction) {
 }
 
 document.querySelector('html').addEventListener('keyup', (event) => {
-  console.log(event.key);
-  let sprite1 = document.querySelector('#sprite1');
-  console.log(sprite1);
-  let sprite2 = document.querySelector('#sprite2');
-
   if (event.key === 'w') {
     move1(sprite1, 'up');
   } else if (event.key === 'a') {
@@ -98,41 +96,3 @@ document.querySelector('html').addEventListener('keyup', (event) => {
     move2(sprite2, 'right');
   }
 });
-
-
-
-////////////////////////////////////////
-
-function player1moveup() {
-  move(sprite1, 'up');
-}
-
-function player1movedown() {
-  move(sprite1, 'down');
-}
-
-function player1moveleft() {
-  move(sprite1, 'left');
-}
-
-function player1moveright() {
-  move(sprite1, 'right');
-}
-
-function player1moveup() {
-  move(sprite2, 'up');
-}
-
-function player1movedown() {
-  move(sprite2, 'down');
-}
-
-function player1moveleft() {
-  move(sprite2, 'left');
-}
-
-function player1moveright() {
-  move(sprite2, 'right');
-}
-
-//////////////////////////
