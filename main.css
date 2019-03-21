@@ -1,5 +1,0 @@
-body {
-    display: grid;
-    grid-template-columns: repeat(8, 20%);
-    grid-template-rows: 0.5fr repeat(8, 20%);
- }
