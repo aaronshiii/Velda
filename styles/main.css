@@ -1,36 +1,35 @@
 .tile-playfield {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  grid-gap: 10px;
-  width: 800px;
-
-}
-
-img {
-  height: 100px;
-  width: 100px;
-}
-
-.sprite-1
-{
-  grid-row: 1/1;
-  grid-column: 1/1;
-}
-
-.sprite-2
-{
-  grid-row: 8/8;
-  grid-column: 8/8;
-}
-
-footer {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
-  border: 5px solid green;
-}
-
-header {
-  text-align: center;
-}
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 10px;
+    width: 800px;
+  
+  }
+  
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .sprite-1
+  {
+    grid-row: 1/1;
+    grid-column: 1/1;
+  }
+  
+  .sprite-2
+  {
+    grid-row: 8/8;
+    grid-column: 8/8;
+  }
+  
+  footer {
+    width: 100%;
+    border: 5px solid green;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
