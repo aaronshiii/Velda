@@ -1,8 +1,9 @@
-.playfield {
+.tile-playfield {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
   grid-gap: 10px;
+  width: 800px;
 
   max-height: 100%;
   max-width: 100%;
@@ -22,15 +23,14 @@
   grid-column: 8/8;
 }
 
-.grid-item {
-  /* max-height: 100%;
-  max-width: 100%; */
-  /* object-fit: cover; */
+.sprite1
+{
+  grid-row: 1/1;
+  grid-column: 1/1;
 }
 
-/* .grid-item-1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-} */
+.sprite2
+{
+  grid-row: 8/8;
+  grid-column: 8/8;
+}
