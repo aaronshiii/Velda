@@ -8,8 +8,18 @@
   max-width: 100%;
   /* border: 5px solid red; */
   background-color: yellow;
+}
 
+.sprite1
+{
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
 
+.sprite2
+{
+  grid-row: 8/8;
+  grid-column: 8/8;
 }
 
 .grid-item {
