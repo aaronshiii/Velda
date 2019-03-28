@@ -10,7 +10,7 @@
 img {
   height: 100px;
   width: 100px;
-}1
+}
 
 .sprite-1
 {
@@ -22,4 +22,15 @@ img {
 {
   grid-row: 8/8;
   grid-column: 8/8;
+}
+
+footer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  border: 5px solid green;
+}
+
+header {
+  text-align: center;
 }
