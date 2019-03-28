@@ -7,34 +7,77 @@ var sprite2Y = 8;
 let sprite1 = document.querySelector('#sprite1');
 let sprite2 = document.querySelector('#sprite2');
 
-function checkBounds (sprite) {
-  return true;
+function checkBounds (sprite, direction) {
+  if (sprite === 'a') {
+    if (direction === 'up') {
+      if (sprite1Y > 1) {
+        return true;
+      }
+    } else if (direction === 'down') {
+      if (sprite1Y < 8) {
+        return true;
+      }
+    } else if (direction === 'left') {
+      if (sprite1X > 1) {
+        return true;
+      }
+    } else if (direction === 'right') {
+      if (sprite1X < 8) {
+        return true;
+      }
+    }
+  } else if (sprite === 'b') {
+    if (direction === 'up') {
+      if (sprite2Y > 1) {
+        return true;
+      }
+    } else if (direction === 'down') {
+      if (sprite2Y < 8) {
+        return true;
+      }
+    } else if (direction === 'left') {
+      if (sprite2X > 1) {
+        return true;
+      }
+    } else if (direction === 'right') {
+      if (sprite2X < 8) {
+        return true;
+      }
+    }
+  }
+  return false;
 }
 
 function move1 (sprite, direction) {
-  // set css styles grid-column and grid-row
-  if (checkBounds(sprite) === true) {
-    if (direction === 'up') {
+// set css styles grid-column and grid-row
+  if (direction === 'up') {
+    if (checkBounds('a', direction) === true) {
       sprite1Y--;
       // console.log(sprite.style.gridRowStart);
       sprite.style.gridRowStart = sprite1Y;
       sprite.style.gridRowEnd = sprite1Y;
       sprite.style.gridColumnStart = sprite1X;
       sprite.style.gridColumnEnd = sprite1X;
-    } else if (direction === 'down') {
+    }
+  } else if (direction === 'down') {
+    if (checkBounds('a', direction) === true) {
       sprite1Y++;
       // console.log(sprite.style.gridRowStart);
       sprite.style.gridRowStart = sprite1Y;
       sprite.style.gridRowEnd = sprite1Y;
       sprite.style.gridColumnStart = sprite1X;
       sprite.style.gridColumnEnd = sprite1X;
-    } else if (direction === 'left') {
+    }
+  } else if (direction === 'left') {
+    if (checkBounds('a', direction) === true) {
       sprite1X--;
       sprite.style.gridRowStart = sprite1Y;
       sprite.style.gridRowEnd = sprite1Y;
       sprite.style.gridColumnStart = sprite1X;
       sprite.style.gridColumnEnd = sprite1X;
-    } else if (direction === 'right') {
+    }
+  } else if (direction === 'right') {
+    if (checkBounds('a', direction) === true) {
       sprite1X++;
       sprite.style.gridRowStart = sprite1Y;
       sprite.style.gridRowEnd = sprite1Y;
@@ -46,28 +89,34 @@ function move1 (sprite, direction) {
 
 function move2 (sprite, direction) {
   // set css styles grid-column and grid-row
-  if (checkBounds(sprite) === true) {
-    if (direction === 'up') {
+  if (direction === 'up') {
+    if (checkBounds('b', direction) === true) {
       sprite2Y--;
       // console.log(sprite.style.gridRowStart);
       sprite.style.gridRowStart = sprite2Y;
       sprite.style.gridRowEnd = sprite2Y;
       sprite.style.gridColumnStart = sprite2X;
       sprite.style.gridColumnEnd = sprite2X;
-    } else if (direction === 'down') {
+    }
+  } else if (direction === 'down') {
+    if (checkBounds('b', direction) === true) {
       sprite2Y++;
       // console.log(sprite.style.gridRowStart);
       sprite.style.gridRowStart = sprite2Y;
       sprite.style.gridRowEnd = sprite2Y;
       sprite.style.gridColumnStart = sprite2X;
       sprite.style.gridColumnEnd = sprite2X;
-    } else if (direction === 'left') {
+    }
+  } else if (direction === 'left') {
+    if (checkBounds('b', direction) === true) {
       sprite2X--;
       sprite.style.gridRowStart = sprite2Y;
       sprite.style.gridRowEnd = sprite2Y;
       sprite.style.gridColumnStart = sprite2X;
       sprite.style.gridColumnEnd = sprite2X;
-    } else if (direction === 'right') {
+    }
+  } else if (direction === 'right') {
+    if (checkBounds('b', direction) === true) {
       sprite2X++;
       sprite.style.gridRowStart = sprite2Y;
       sprite.style.gridRowEnd = sprite2Y;
