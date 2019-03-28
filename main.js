@@ -144,4 +144,24 @@ document.querySelector('html').addEventListener('keyup', (event) => {
   } else if (event.key === 'l') {
     move2(sprite2, 'right');
   }
-});
+}
+);
+
+
+document.getElementById("W").addEventListener("click", function(){
+  move1(sprite1, 'up');});
+document.getElementById("S").addEventListener("click", function(){
+  move1(sprite1, 'down');});
+document.getElementById("A").addEventListener("click", function(){
+  move1(sprite1, 'left');});
+document.getElementById("D").addEventListener("click", function(){
+  move1(sprite1, 'right');});
+
+document.getElementById("I").addEventListener("click", function(){
+    move2(sprite2, 'up');});
+document.getElementById("K").addEventListener("click", function(){
+    move2(sprite2, 'down');});
+document.getElementById("J").addEventListener("click", function(){
+    move2(sprite2, 'left');});
+document.getElementById("L").addEventListener("click", function(){
+    move2(sprite2, 'right');});
