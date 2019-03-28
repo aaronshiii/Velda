@@ -18,6 +18,28 @@
     grid-column: 1/1;
   }
 
+  .spacerW
+  {
+        width:25px;
+        height:auto;
+        display:inline-block;
+  }
+
+.spacer
+{
+      width:260px;
+      height:auto;
+      display:inline-block;
+}
+
+.spacer2
+{
+      width:200px;
+      height:auto;
+      display:inline-block;
+}
+
+}
   .sprite-2
   {
     grid-row: 8/8;
